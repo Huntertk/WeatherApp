@@ -26,15 +26,16 @@ body{
 .search-container{
     height: 15vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 2em;
     padding-bottom: 0;
     margin: auto;
     margin-bottom: 0;
     background-color: #282A3A;
-    width: 500px;
+    width: 400px;
 }
+
 .location-input{
     font-weight: 400;
     letter-spacing: 2px;
@@ -57,7 +58,7 @@ body{
     border-radius: 6px;
     font-size: 1.2rem;
     font-family: inherit;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
     transition: all 0.3s linear;
 }
 .btn:hover{
@@ -75,7 +76,7 @@ body{
     margin-top: 0;
     height: 60vh;
     background-color: #282A3A;
-    width: 500px;
+    width: 400px;
 }
 .weather-img{
     margin: 1em auto 0 auto;
@@ -109,4 +110,19 @@ body{
 .humidity-container,
 .wind-container{
     text-align: center;
+}
+
+@media(min-width:600px){
+    .search-container{
+        width: 500px;
+    }
+    .location-input{
+        width: 70%;
+    }
+    .btn{
+        padding: 0.5em 1em;
+    }
+    .weather-container{
+        width: 500px;
+    }
 }
