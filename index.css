@@ -1,0 +1,112 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.main-section{
+    padding-top: 3em;
+    height: 100vh;
+    background-color: #191825;
+}
+#errorMsg{
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+}
+.search-container{
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2em;
+    padding-bottom: 0;
+    margin: auto;
+    margin-bottom: 0;
+    background-color: #282A3A;
+    width: 500px;
+}
+.location-input{
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    width: 70%;
+    border-radius: 6px;
+    padding: 1.18em;
+    border: 1px solid #a7a5a5;
+}
+.location-input:focus{
+    color: #fff;
+    background-color: #191825;
+    border-color: #fff;
+}
+.btn{
+    cursor: pointer;
+    color: #fff;
+    background-color: #191825;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    padding: 0.5em 1em;
+    transition: all 0.3s linear;
+}
+.btn:hover{
+    transform: rotate(-3deg);
+    border-color: #191825;
+    background-color: #fff;
+    color: #191825;
+}
+
+/*Weather */
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0;
+    height: 60vh;
+    background-color: #282A3A;
+    width: 500px;
+}
+.weather-img{
+    margin: 1em auto 0 auto;
+    width: 140px;
+}
+.temp{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 0.3em;
+}
+.deg{
+    font-size: 0.5em;
+}
+.weather-condition{
+    margin-right: 25px;
+    text-align: center;
+    margin: 0;
+}
+.city-name{
+    font-size: 1.2rem;
+    margin-top: 2em;
+}
+.weather-details{
+    display: flex;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    justify-content: space-between;
+}
+.humidity-container,
+.wind-container{
+    text-align: center;
+}
